@@ -273,8 +273,8 @@ function ProductCard({
                 )
                 : (
                   <h2
-                    class="truncate text-base lg:text-lg text-base-content uppercase font-normal"
-                    dangerouslySetInnerHTML={{ __html: name ?? "" }}
+                    class="truncate text-base text-base-content font-normal"
+                    dangerouslySetInnerHTML={{ __html: `${product.isVariantOf?.name} - ${name}` ?? "" }}
                   />
                 )}
               {l?.hide?.productDescription
@@ -282,7 +282,7 @@ function ProductCard({
                   ""
                 )
                 : (
-                  <div
+                  <span
                     class="truncate text-sm lg:text-sm text-neutral"
                     dangerouslySetInnerHTML={{ __html: description ?? "" }}
                   />

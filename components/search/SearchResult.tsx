@@ -54,7 +54,7 @@ function Result({
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
+      <div class="container flex flex-col px-4 sm:py-10">
         <SearchControls
           sortOptions={sortOptions}
           filters={filters}
